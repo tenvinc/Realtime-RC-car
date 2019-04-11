@@ -19,6 +19,8 @@ typedef enum {
 	BYE = '?',
 	FORWARD = 'F',
 	REVERSE = 'B',
+	STR_LEFT = 'K',
+	STR_RIGHT = 'Q',
 	LEFT = 'L',
 	RIGHT = 'R',
 	STOP = 'S'

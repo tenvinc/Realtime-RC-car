@@ -56,6 +56,14 @@ void listenBt(void *p) {
 				xQueueOverwrite(xQueueRed, &mode);
 				endtone();
 				break;
+			case STR_LEFT:
+				l = 0;
+				r = 255;
+				mode = RUNNING;
+				xQueueOverwrite(xQueueRed, &mode);
+				isStop = false;
+				xQueueOverwrite(xQueueGreen, &isStop);
+				break;
 			case LEFT:
 				l = 95;
 				r = 255;
@@ -64,6 +72,13 @@ void listenBt(void *p) {
 				isStop = false;
 				xQueueOverwrite(xQueueGreen, &isStop);
 				break;
+			case STR_RIGHT:
+				l = 255;
+				r = 0;
+				mode = RUNNING;
+				xQueueOverwrite(xQueueRed, &mode);
+				isStop = false;
+				xQueueOverwrite(xQueueGreen, &isStop);
 			case RIGHT:
 				l = 255;
 				r = 95;
