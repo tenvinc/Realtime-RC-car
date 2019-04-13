@@ -124,7 +124,7 @@ void tSerial(void *p) {
 			}
 			xQueueSend(xQueueLeft, &l, (TickType_t) 0);
 			xQueueSend(xQueueRight, &r, (TickType_t) 0);
-		}else if (millis() - previousActiveTime > 1000) {
+		}else if (millis() - previousActiveTime > 500) {
 			l = 0;
 			r = 0;
 			xQueueSend(xQueueLeft, &l, (TickType_t) 0);

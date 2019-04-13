@@ -13,8 +13,8 @@
 #include <semphr.h>
 #include "constants.h"
 
-QueueHandle_t xQueueLeft = xQueueCreate(10, sizeof(int));
-QueueHandle_t xQueueRight = xQueueCreate(10, sizeof(int));
+QueueHandle_t xQueueLeft = xQueueCreate(1, sizeof(int));
+QueueHandle_t xQueueRight = xQueueCreate(1, sizeof(int));
 
 void tMotorControlLeft(void *p)
 {
