@@ -62,127 +62,127 @@
 #define S_SHARK Q_SHARK/4        // sixteenth 1/16
 #define W_SHARK 4*Q_SHARK        // whole 4/4
 
-void starttone()
-{
-	tone(BUZZER,G3,E);
-	delay(1+E); //delay duration should always be 1 ms more than the note in order to separate them.
-	tone(BUZZER,C4,E);
-	delay(1+E);
-	tone(BUZZER,E4,E);
-	delay(1+E);
-	tone(BUZZER,G5,Q);
-	delay(1+Q);
+void starttone() {
+	tone(BUZZER, G3, E);
+	delay(1 + E); //delay duration should always be 1 ms more than the note in order to separate them.
+	tone(BUZZER, C4, E);
+	delay(1 + E);
+	tone(BUZZER, E4, E);
+	delay(1 + E);
+	tone(BUZZER, G5, Q);
+	delay(1 + Q);
+	delay(500);
 }
 
 void endtone() {
-	tone(BUZZER,G3,E);
-	delay(1+E); //delay duration should always be 1 ms more than the note in order to separate them.
-	tone(BUZZER,C4,E);
-	delay(1+E);
-	tone(BUZZER,E4,E);
-	delay(1+E);
-	tone(BUZZER,G4,E);
-	delay(1+E);
-	tone(BUZZER,C5,E);
-	delay(1+E);
-	tone(BUZZER,E5,E);
-	delay(1+E);
-	tone(BUZZER,G5,Q+E);
-	delay(1+Q+E);
-	tone(BUZZER,E5,Q+E);
-	delay(1+Q+E);
+	tone(BUZZER, G3, E);
+	delay(1 + E); //delay duration should always be 1 ms more than the note in order to separate them.
+	tone(BUZZER, C4, E);
+	delay(1 + E);
+	tone(BUZZER, E4, E);
+	delay(1 + E);
+	tone(BUZZER, G4, E);
+	delay(1 + E);
+	tone(BUZZER, C5, E);
+	delay(1 + E);
+	tone(BUZZER, E5, E);
+	delay(1 + E);
+	tone(BUZZER, G5, Q + E);
+	delay(1 + Q + E);
+	tone(BUZZER, E5, Q + E);
+	delay(1 + Q + E);
 
-	tone(BUZZER,Ab3,E);
-	delay(1+E);
-	tone(BUZZER,C4,E);
-	delay(1+E);
-	tone(BUZZER,Eb4,E);
-	delay(1+E);
-	tone(BUZZER,Ab4,E);
-	delay(1+E);
-	tone(BUZZER,C5,E);
-	delay(1+E);
-	tone(BUZZER,Eb5,E);
-	delay(1+E);
-	tone(BUZZER,Ab5,Q+E);
-	delay(1+Q+E);
-	tone(BUZZER,Eb5,Q+E);
-	delay(1+Q+E);
+	tone(BUZZER, Ab3, E);
+	delay(1 + E);
+	tone(BUZZER, C4, E);
+	delay(1 + E);
+	tone(BUZZER, Eb4, E);
+	delay(1 + E);
+	tone(BUZZER, Ab4, E);
+	delay(1 + E);
+	tone(BUZZER, C5, E);
+	delay(1 + E);
+	tone(BUZZER, Eb5, E);
+	delay(1 + E);
+	tone(BUZZER, Ab5, Q + E);
+	delay(1 + Q + E);
+	tone(BUZZER, Eb5, Q + E);
+	delay(1 + Q + E);
 
-	tone(BUZZER,Bb3,E);
-	delay(1+E);
-	tone(BUZZER,D4,E);
-	delay(1+E);
-	tone(BUZZER,F4,E);
-	delay(1+E);
-	tone(BUZZER,Bb4,E);
-	delay(1+E);
-	tone(BUZZER,D5,E);
-	delay(1+E);
-	tone(BUZZER,F5,E);
-	delay(1+E);
-	tone(BUZZER,Bb5,Q+E);
-	delay(1+Q+E);
-	tone(BUZZER,Bb5,E);
-	delay(1+E);
-	tone(BUZZER,Bb5,E);
-	delay(1+E);
-	tone(BUZZER,Bb5,E);
-	delay(1+E);
-	tone(BUZZER,C6,H+Q+E);
-	delay(1+H+Q+E);
+	tone(BUZZER, Bb3, E);
+	delay(1 + E);
+	tone(BUZZER, D4, E);
+	delay(1 + E);
+	tone(BUZZER, F4, E);
+	delay(1 + E);
+	tone(BUZZER, Bb4, E);
+	delay(1 + E);
+	tone(BUZZER, D5, E);
+	delay(1 + E);
+	tone(BUZZER, F5, E);
+	delay(1 + E);
+	tone(BUZZER, Bb5, Q + E);
+	delay(1 + Q + E);
+	tone(BUZZER, Bb5, E);
+	delay(1 + E);
+	tone(BUZZER, Bb5, E);
+	delay(1 + E);
+	tone(BUZZER, Bb5, E);
+	delay(1 + E);
+	tone(BUZZER, C6, H + Q + E);
+	delay(1 + H + Q + E);
 
-	delay(2*H);
+	delay(2 * H);
 }
 
 void sequence() {
-	tone(BUZZER,G4,E_SHARK);
-	vTaskDelay(1+E_SHARK);
-	tone(BUZZER,G4,E_SHARK);
-	vTaskDelay(1+E_SHARK);
+	tone(BUZZER, G4, E_SHARK);
+	vTaskDelay(1 + E_SHARK);
+	tone(BUZZER, G4, E_SHARK);
+	vTaskDelay(1 + E_SHARK);
 
-	tone(BUZZER,G4,E_SHARK);
-	vTaskDelay(1+E_SHARK);
-	tone(BUZZER,G4,S_SHARK);
-	vTaskDelay(1+S_SHARK);
-	tone(BUZZER,G4,E_SHARK);
-	vTaskDelay(1+E_SHARK);
+	tone(BUZZER, G4, E_SHARK);
+	vTaskDelay(1 + E_SHARK);
+	tone(BUZZER, G4, S_SHARK);
+	vTaskDelay(1 + S_SHARK);
+	tone(BUZZER, G4, E_SHARK);
+	vTaskDelay(1 + E_SHARK);
 
-	tone(BUZZER,G4,S_SHARK);
-	vTaskDelay(1+S_SHARK);
-	tone(BUZZER,G4,E_SHARK);
-	vTaskDelay(1+E_SHARK);
+	tone(BUZZER, G4, S_SHARK);
+	vTaskDelay(1 + S_SHARK);
+	tone(BUZZER, G4, E_SHARK);
+	vTaskDelay(1 + E_SHARK);
 }
 
-void babysharkTask(void* p) {
+void tAudio(void* p) {
 	for (;;) {
-		tone(BUZZER,D3,Q_SHARK);
-		vTaskDelay(1+Q_SHARK);
-		tone(BUZZER,E3,Q_SHARK);
-		vTaskDelay(1+Q_SHARK);
+		tone(BUZZER, D3, Q_SHARK);
+		vTaskDelay(1 + Q_SHARK);
+		tone(BUZZER, E3, Q_SHARK);
+		vTaskDelay(1 + Q_SHARK);
 
 		sequence();
 
-		tone(BUZZER,G3,E_SHARK);
-		vTaskDelay(1+E_SHARK);
-		tone(BUZZER,G3,E_SHARK);
-		vTaskDelay(1+E_SHARK);
+		tone(BUZZER, G3, E_SHARK);
+		vTaskDelay(1 + E_SHARK);
+		tone(BUZZER, G3, E_SHARK);
+		vTaskDelay(1 + E_SHARK);
 
 		sequence();
 
-		tone(BUZZER,G3,E_SHARK);
-		vTaskDelay(1+E_SHARK);
-		tone(BUZZER,G3,E_SHARK);
-		vTaskDelay(1+E_SHARK);
+		tone(BUZZER, G3, E_SHARK);
+		vTaskDelay(1 + E_SHARK);
+		tone(BUZZER, G3, E_SHARK);
+		vTaskDelay(1 + E_SHARK);
 
 		sequence();
 
-		tone(BUZZER,G3,E_SHARK);
-		vTaskDelay(1+E_SHARK);
-		tone(BUZZER,G3,E_SHARK);
-		vTaskDelay(1+E_SHARK);
-		tone(BUZZER,Gb4,H_SHARK);
-		vTaskDelay(1+H_SHARK);
+		tone(BUZZER, G3, E_SHARK);
+		vTaskDelay(1 + E_SHARK);
+		tone(BUZZER, G3, E_SHARK);
+		vTaskDelay(1 + E_SHARK);
+		tone(BUZZER, Gb4, H_SHARK);
+		vTaskDelay(1 + H_SHARK);
 	}
 }
 

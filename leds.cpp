@@ -17,7 +17,7 @@ SemaphoreHandle_t xSemaphoreRed = xSemaphoreCreateBinary();
 QueueHandle_t xQueueRed = xQueueCreate(1, sizeof(Mode));
 QueueHandle_t xQueueGreen = xQueueCreate(1, sizeof(bool));
 
-void redLED(void *p) {
+void tLEDRed(void *p) {
 	TickType_t xLastWakeTime = 0;
 	int delay = 250;
 	Mode mode;
@@ -45,7 +45,7 @@ void redLED(void *p) {
 	}
 }
 
-void greenLED(void *p) {
+void tLEDGreen(void *p) {
 	byte leds;
 	TickType_t xLastWakeTime = 0;
 	bool taken = false;

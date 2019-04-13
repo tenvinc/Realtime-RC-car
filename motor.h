@@ -11,8 +11,8 @@
 extern QueueHandle_t xQueueLeft;
 extern QueueHandle_t xQueueRight;
 
-void left(void*);
+void tMotorControlLeft(void*);
 
-void right(void*);
+void tMotorControlRight(void*);
 
 #endif /* MOTOR_H_ */

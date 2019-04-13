@@ -14,7 +14,7 @@ extern SemaphoreHandle_t xSemaphoreRed;
 extern QueueHandle_t xQueueGreen;
 extern QueueHandle_t xQueueRed;
 
-void redLED(void*);
-void greenLED(void*);
+void tLEDRed(void*);
+void tLEDGreen(void*);
 
 #endif /* LEDS_H_ */

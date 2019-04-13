@@ -16,7 +16,7 @@
 QueueHandle_t xQueueLeft = xQueueCreate(10, sizeof(int));
 QueueHandle_t xQueueRight = xQueueCreate(10, sizeof(int));
 
-void left(void *p)
+void tMotorControlLeft(void *p)
 {
 	int dc = 0;
 	bool isForward = true;
@@ -48,7 +48,7 @@ void left(void *p)
 	}
 }
 
-void right(void *p)
+void tMotorControlRight(void *p)
 {
 	int dc = 0;
 	bool isForward = true;

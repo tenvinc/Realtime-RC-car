@@ -14,6 +14,6 @@ void starttone(void);
 void endtone(void);
 
 // Task for babyshark tone
-void babysharkTask(void*);
+void tAudio(void*);
 
 #endif /* MUSIC_H_ */
