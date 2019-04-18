@@ -50,7 +50,7 @@ void tLEDGreen(void *p) {
 	TickType_t xLastWakeTime = 0;
 	bool taken = false;
 	bool isStop;
-	bool shouteck;
+	bool isStop_Message;
 	for (;;) {
 		if (taken == false) {
 			if (xSemaphoreTake(xSemaphoreGreen, (TickType_t) portMAX_DELAY) == pdTRUE) {
@@ -68,9 +68,9 @@ void tLEDGreen(void *p) {
 		}
 		else {
 			if (xQueueReceive(xQueueGreen, &isStop, (TickType_t) 0) == pdTRUE) {
-				shouteck = isStop;
+				isStop_Message = isStop;
 			}
-			if (shouteck) {
+			if (isStop_Message) {
 				leds = 255;
 				digitalWrite(LATCH_PIN, LOW);
 				shiftOut(DATA_PIN, CLOCK_PIN, LSBFIRST, leds);
